@@ -132,6 +132,10 @@ function create() {
 	/**************************************************/
 
 	/*********************** STARS ********************/
+	// This way of adding childs to a group is useful when you have to add
+	// a lot of identical children. 
+	// When you have to add like one or two different children to a group,
+	// you can use thisGroup.add(gameObject) or its 'shortcut' thisGroup.create(x, y, key);
 	stars = this.physics.add.group({
 		key: 'star',
 		repeat: 11,
